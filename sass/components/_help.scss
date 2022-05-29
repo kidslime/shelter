@@ -1,0 +1,40 @@
+.help__wrapper {
+    padding: 80px 0 45px 0;
+    @include media-laptop {
+        padding: 80px 0;
+    }
+}
+
+// дисплей флекс, врап, гап 120 55
+.help__title {
+    max-width: 310px;
+    margin: 0 auto 59px;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.help__list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include media-laptop {
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 35px;
+    }
+}
+
+.help__item {
+    display: inline-block;
+    margin: 0 59px 35px;
+    @include media-laptop {
+        margin: 0;
+    }
+}
+
+.help__item-image {
+    display: block;
+    margin: 0 auto 30px;
+}

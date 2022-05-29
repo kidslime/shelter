@@ -1,0 +1,19 @@
+.logo__title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    @include font($size: 3.2rem, $height: 3.6rem);
+    letter-spacing: 0.20rem;
+    color: $color-primary;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.logo__subtitle {
+    @include font($size: 1.3rem, $height: 1.5rem);
+    padding: 0 0 0 4px;
+    letter-spacing: 0.1em;
+    color: $color-light-xl;
+}
+
+.logo {
+    text-decoration: none;
+}

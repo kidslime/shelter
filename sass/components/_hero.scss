@@ -1,0 +1,71 @@
+.hero__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    @include media-laptop {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+}
+
+.hero__content {
+    margin-top: 163px;
+    margin-right: 42px;
+    @include media-laptop {
+        margin: 0 0 100px 0;
+        max-width: 460px;
+    }
+    @include media-tablet {
+        text-align: center;
+        max-width: 300px;
+        margin: 0 0 104px 0;
+    }
+}
+
+.hero__title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    @include font($size: 4.4rem, $height: 5.72rem);
+    padding-right: 150px;
+    margin: 0 0 42px;
+    color: $color-light-xl;
+    @include media-tablet {
+        @include font($size: 2.5rem, $height: 3.3rem);
+        max-width: 70%;
+        margin: auto;
+        padding: 0;
+        margin-bottom: 42px;
+        letter-spacing: 0.06em;
+    }
+}
+
+.hero__text {
+    @include font ($size: 1.5rem, $height: 2.4rem);
+    color: $color-dark-s;
+    margin-bottom: 40px;
+}
+
+.hero__button {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button-wrapper {
+    @include media-laptop {
+        text-align: center;
+    }
+}
+
+.hero__image {
+    @include media-laptop {
+        width: 569px;
+        height: 593px;
+        padding-left: 140px;
+    }
+    @include media-tablet {
+        width: 260px;
+        height: 272px;
+        padding-left: 40px;
+    }
+    display: flex;
+}

@@ -1,0 +1,109 @@
+@import "abstract/constants";
+@import "base/normalize";
+@import "abstract/mixins";
+@import "base/base";
+@import "base/buttons";
+@import "base/logo.scss";
+@import "base/icons";
+@import "layouts/wrapper";
+@import "layouts/header";
+@import "components/navigation";
+@import "components/hero";
+@import "components/about";
+@import "components/pets";
+@import "components/cards";
+@import "components/slider";
+@import "components/help";
+@import "components/donation";
+@import "layouts/outter-wrapper";
+@import "layouts/footer";
+.header {
+    position: sticky;
+    top: 0;
+    background-color: $color-light-xl;
+}
+
+.logo__title {
+    color: $color-dark-l;
+}
+
+.logo__subtitle {
+    color: $color-dark-l;
+}
+
+.navigation__link {
+    color: $color-dark-l;
+    &_current {
+        border-bottom: 3px solid $color-primary;
+    }
+}
+
+.slider__wrapper {
+    @include columns(270px);
+    align-items: center;
+    margin: 0 0 60px 0;
+    align-content: space-between;
+    gap: 40px 30px;
+}
+
+.slider__card {
+    margin: 0;
+}
+
+.slider__wrapper {
+    gap: 30px;
+}
+
+.slider-controlls {
+    display: flex;
+    max-width: 34rem;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.slider-controlls__btn {
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 5.2rem;
+    height: 5.2rem;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    border-radius: 10rem;
+    letter-spacing: 0.06em;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color: $color-dark-3xl;
+    &:hover {
+        background-color: $color-primary-light;
+        border-color: $color-primary-light;
+    }
+}
+
+.navigation__link {
+    color: $color-dark-l;
+    &:hover {
+        color: $color-dark-3xl;
+    }
+}
+
+.slider-controlls__btn_disabled {
+    cursor: auto;
+    border: 2px solid $color-dark-s;
+    color: $color-dark-s;
+    &:hover {
+        background-color: transparent;
+        border-color: $color-dark-s;
+    }
+}
+
+.slider-controlls__btn_active {
+    cursor: auto;
+    background-color: $color-primary;
+    &:hover {
+        background-color: $color-primary;
+        border-color: $color-primary;
+    }
+}
